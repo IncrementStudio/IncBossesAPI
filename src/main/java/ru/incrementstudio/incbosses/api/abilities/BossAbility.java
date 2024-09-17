@@ -7,7 +7,7 @@ import ru.incrementstudio.incbosses.api.bosses.phases.Phase;
 
 public abstract class BossAbility extends Ability {
     public BossAbility(@NotNull AbilityAdapter abilityAdapter, @NotNull Boss boss, @NotNull ConfigurationSection config) {
-        super(abilityAdapter);
+        super(abilityAdapter, boss, config);
     }
 
     public void onPhaseChanged(@NotNull Phase from, @NotNull Phase to) {
@@ -17,15 +17,5 @@ public abstract class BossAbility extends Ability {
     }
 
     public void stop() {
-    }
-
-    @NotNull
-    public Boss getBoss() {
-        return null;
-    }
-
-    @NotNull
-    public ConfigurationSection getConfig() {
-        return null;
     }
 }

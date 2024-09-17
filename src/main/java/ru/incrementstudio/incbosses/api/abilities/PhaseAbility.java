@@ -9,7 +9,7 @@ import ru.incrementstudio.incbosses.api.bosses.phases.StopReason;
 
 public abstract class PhaseAbility extends Ability {
     protected PhaseAbility(@NotNull AbilityAdapter abilityAdapter, @NotNull Boss boss, @NotNull Phase phase, @NotNull ConfigurationSection config) {
-        super(abilityAdapter);
+        super(abilityAdapter, boss, config);
     }
 
     public void start(@NotNull StartReason reason) {
@@ -19,17 +19,7 @@ public abstract class PhaseAbility extends Ability {
     }
 
     @NotNull
-    public Boss getBoss() {
-        return null;
-    }
-
-    @NotNull
     public Phase getPhase() {
-        return null;
-    }
-
-    @NotNull
-    public ConfigurationSection getConfig() {
         return null;
     }
 }

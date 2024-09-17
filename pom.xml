@@ -39,15 +39,6 @@
           </execution>
         </executions>
       </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>2.3.1</version>
-            <configuration>
-                <outputDirectory>${basedir}/out</outputDirectory>
-                <finalName>${artifactId}-${project.version}</finalName>
-            </configuration>
-        </plugin>
     </plugins>
   </build>
 

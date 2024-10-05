@@ -8,15 +8,6 @@ import ru.incrementstudio.incbosses.api.bosses.Boss;
 import java.util.List;
 
 public class BossDeathByPlayerEvent extends BossDeathEvent {
-    public static @NotNull HandlerList getHandlerList() {
-        return null;
-    }
-
-    @Override
-    public @NotNull HandlerList getHandlers() {
-        return null;
-    }
-
     public BossDeathByPlayerEvent(@NotNull Boss boss, @NotNull List<String> message) {
         super(boss, message);
     }
